@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visualización de Grafo Interactivo</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #graph-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #graph-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .links line {
+            stroke: #999;
+            stroke-opacity: 0.6;
+            stroke-width: 1.5px;
+        }
+
+        .nodes circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+            cursor: pointer;
+        }
+
+        .labels text {
+            font-size: 10px;
+            fill: #333;
+            pointer-events: none;
+        }
+
+        .zoom-controls {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+        }
+
+        .zoom-btn {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            font-size: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background: #f8f8f8;
+        }
+
+        #modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        #chess-board {
+            display: inline-block;
+            margin: 20px auto;
+            border: 2px solid #333;
+        }
+
+        .chess-row {
+            display: flex;
+        }
+
+        .chess-cell {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .white {
+            background-color: #f0d9b5;
+        }
+
+        .black {
+            background-color: #b58863;
+        }
+
+        .knight {
+            font-size: 30px;
+            position: absolute;
+        }
+
+        .black-knight {
+            color: #000;
+        }
+
+        .white-knight {
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+        }
+
+        #close-modal {
+            margin-top: 15px;
+            padding: 5px 15px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="graph-container">
+        <svg id="graph-svg"></svg>
+        <div class="zoom-controls">
+            <button class="zoom-btn" id="zoom-in">+</button>
+            <button class="zoom-btn" id="zoom-out">-</button>
+            <button class="zoom-btn" id="reset-zoom">↻</button>
+        </div>
+    </div>
+
+    <!-- Modal para el tablero de ajedrez -->
+    <div id="modal">
+        <div id="modal-content">
+            <h2 id="modal-title">Posición de caballos</h2>
+            <div id="chess-board"></div>
+            <button id="close-modal">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        // Configuración inicial
+        const container = document.getElementById('graph-container');
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
+        const svg = d3.select("#graph-svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // Elementos del modal
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
+        const chessBoard = document.getElementById('chess-board');
+        const closeModal = document.getElementById('close-modal');
+        const modalTitle = document.getElementById('modal-title');
+
+        // Configuración del zoom
+        const zoom = d3.zoom()
+            .scaleExtent([0.1, 8])
+            .on("zoom", zoomed);
+
+        svg.call(zoom);
+
+        // Esquema de colores
+        const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+
+        // Simulación de fuerzas
+        const simulation = d3.forceSimulation()
+            .force("link", d3.forceLink().id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-300))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("collision", d3.forceCollide().radius(30));
+
+        // Cargar datos
+        d3.json("/graph-data").then(graph => {
+            // Dibujar enlaces
+            const link = svg.append("g")
+                .attr("class", "links")
+                .selectAll("line")
+                .data(graph.links)
+                .enter().append("line");
+
+            // Dibujar nodos
+            const node = svg.append("g")
+                .attr("class", "nodes")
+                .selectAll("circle")
+                .data(graph.nodes)
+                .enter().append("circle")
+                .attr("r", 10)
+                .attr("fill", d => colorScale(d.group))
+                .on("click", showChessBoard)  // Manejador de clic
+                .call(d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended));
+
+            // Tooltips
+            node.append("title")
+                .text(d => d.id);
+
+            // Etiquetas de texto
+            const label = svg.append("g")
+                .attr("class", "labels")
+                .selectAll("text")
+                .data(graph.nodes)
+                .enter().append("text")
+                .attr("dx", 12)
+                .attr("dy", ".35em")
+                .text(d => d.id);
+
+            // Configurar simulación
+            simulation
+                .nodes(graph.nodes)
+                .on("tick", ticked);
+
+            simulation.force("link")
+                .links(graph.links);
+
+            // Función para actualizar posiciones
+            function ticked() {
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node
+                    .attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+
+                label
+                    .attr("x", d => d.x)
+                    .attr("y", d => d.y);
+            }
+
+            // Controladores de zoom
+            document.getElementById('zoom-in').addEventListener('click', () => {
+                svg.transition().call(zoom.scaleBy, 1.3);
+            });
+
+            document.getElementById('zoom-out').addEventListener('click', () => {
+                svg.transition().call(zoom.scaleBy, 0.7);
+            });
+
+            document.getElementById('reset-zoom').addEventListener('click', () => {
+                svg.transition().call(zoom.transform, d3.zoomIdentity);
+            });
+        });
+
+        // Función para mostrar el tablero de ajedrez
+        function showChessBoard(event, d) {
+            const nodeId = d.id;
+            modalTitle.textContent = `Posición de caballos para nodo: ${nodeId}`;
+            chessBoard.innerHTML = '';
+
+            // Extraer las 4 posiciones (x,y) del ID
+            const positions = [];
+            for (let i = 0; i < 8; i += 2) {
+                const x = parseInt(nodeId.substring(i, i + 1));
+                const y = parseInt(nodeId.substring(i + 1, i + 2));
+                positions.push({ x, y });
+            }
+
+            // Crear tablero 3x3
+            for (let y = 0; y < 3; y++) {  // filas (y)
+                const chessRow = document.createElement('div');
+                chessRow.className = 'chess-row';
+
+                for (let x = 0; x < 3; x++) {  // columnas (x)
+                    const cell = document.createElement('div');
+                    cell.className = `chess-cell ${(x + y) % 2 === 0 ? 'white' : 'black'}`;
+
+                    // Verificar caballos negros (primeros dos pares)
+                    if ((x === positions[0].x && y === positions[0].y) ||
+                        (x === positions[1].x && y === positions[1].y)) {
+                        const knight = document.createElement('div');
+                        knight.className = 'knight black-knight';
+                        knight.textContent = '♞';
+                        cell.appendChild(knight);
+                    }
+
+                    // Verificar caballos blancos (últimos dos pares)
+                    if ((x === positions[2].x && y === positions[2].y) ||
+                        (x === positions[3].x && y === positions[3].y)) {
+                        const knight = document.createElement('div');
+                        knight.className = 'knight white-knight';
+                        knight.textContent = '♘';
+                        cell.appendChild(knight);
+                    }
+
+                    chessRow.appendChild(cell);
+                }
+                chessBoard.appendChild(chessRow);
+            }
+
+            modal.style.display = 'flex';
+        }
+
+        // Cerrar modal
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+
+        // Cerrar modal al hacer clic fuera del contenido
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Función para aplicar el zoom
+        function zoomed(event) {
+            svg.selectAll('g').attr('transform', event.transform);
+        }
+
+        // Funciones para arrastrar nodos
+        function dragstarted(event, d) {
+            if (!event.active) simulation.alphaTarget(0.3).restart();
+            d.fx = d.x;
+            d.fy = d.y;
+        }
+
+        function dragged(event, d) {
+            d.fx = event.x;
+            d.fy = event.y;
+        }
+
+        function dragended(event, d) {
+            if (!event.active) simulation.alphaTarget(0);
+            d.fx = null;
+            d.fy = null;
+        }
+
+        // Redimensionar al cambiar el tamaño de la ventana
+        window.addEventListener('resize', function () {
+            const newWidth = container.clientWidth;
+            const newHeight = container.clientHeight;
+
+            svg.attr("width", newWidth)
+                .attr("height", newHeight);
+
+            simulation.force("center", d3.forceCenter(newWidth / 2, newHeight / 2));
+            simulation.alpha(0.3).restart();
+        });
+    </script>
+</body>
+
+</html>
