@@ -1,0 +1,2262 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35/"
+     xml:base="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-35="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esAutorDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esAutorDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esEscritoPorAutor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esElMismoQue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esElMismoQue">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esEscritoPorAutor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esEscritoPorAutor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esFrecuenciaDeUsoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esFrecuenciaDeUsoDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esInspiradoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#esInspiradoPor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneMetrica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneMetrica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneMismaRima -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneMismaRima">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneNumeroVersos -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneNumeroVersos">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneVerso -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneVerso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Verso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneNumeroDeVersos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneNumeroDeVersos">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#titulo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#titulo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso"/>
+        <rdfs:comment>Muy usada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Asonante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Asonante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#AsonantePares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#AsonantePares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso"/>
+        <rdfs:comment>Casi no se usa</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Figurativo"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Visual"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cantada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cantada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cantada"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oral"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Asonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Coral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Coral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cuartetos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cuartetos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DecimaEspinela"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dialogada"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativa"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DecimaEspinela -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DecimaEspinela">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Descriptiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Descriptiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dialogada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dialogada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoLirico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoLirico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoPastoriles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoPastoriles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoPastoriles"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoLirico"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Introspectiva"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Lamentativa"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa">
+        <rdfs:comment>Subclases no son &apos;Disjoint&apos; porque hay poemas que tiene mas de una metrica</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Exhortativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Exhortativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Figurativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Figurativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion">
+        <rdfs:comment>Formas en las cuales se expresan los poemas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Impresionista"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Minimalista"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                                <owl:allValuesFrom>
+                                    <owl:Class>
+                                        <owl:unionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+                                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion"/>
+                                        </owl:unionOf>
+                                    </owl:Class>
+                                </owl:allValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cuartetos"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Coral"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Exhortativo"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Impresionista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Impresionista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Introspectiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Introspectiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Lamentativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Lamentativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Laudatoria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Laudatoria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUso"/>
+        <rdfs:comment>No se usa ni mucho, ni poco</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaAlejandrino"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Clase enumerada</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Minimalista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Minimalista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Descriptiva"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Laudatoria"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaMultitematico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaMultitematico">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">3</owl:minCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima">
+        <rdfs:comment>Tipo de rima que tienen los poemas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaIrregular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaIrregular">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaRegular"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaRegular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaRegular">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TirasContinuas"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cantada"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativa"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#AsonantePares"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poema"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneTema"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneEstrofa"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cuartetos"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tercetos"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFormaDeExpresion"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Descriptiva"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexiva"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneRima"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#tieneFrecuenciaDeUso"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema">
+        <rdfs:comment>Tematica comun que tienen los poemas</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tercetos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tercetos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TirasContinuas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TirasContinuas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Estrofa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tema"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Verso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Verso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Visual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Visual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresion"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaAmplia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCuartetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCuartetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cuartetos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDecimaEspinela -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDecimaEspinela">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DecimaEspinela"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDialogoPastoriles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDialogoPastoriles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoPastoriles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTercetos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTercetos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tercetos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTirasContinuas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTirasContinuas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TirasContinuas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresionReflexiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FormaExpresionReflexiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUsoMedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#FrecuenciaDeUsoMedia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaAlejandrino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaAlejandrino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+        <untitled-ontology-35:titulo>Caligrama Mariposa</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual"/>
+        <untitled-ontology-35:titulo>El Corazón</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCaligrama3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+        <untitled-ontology-35:titulo>El Sol</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor"/>
+        <untitled-ontology-35:titulo>Coplas a la muerte de Luis de Góngora</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPopular"/>
+        <untitled-ontology-35:titulo>Mi caballo mago</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaCopla3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCopla"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaTradicion"/>
+        <untitled-ontology-35:titulo>Coplas por la muerte de su padre</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDecimaEspinela"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaFilosofia"/>
+        <untitled-ontology-35:titulo>Diversas rimas</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDecimaEspinela"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaHumor"/>
+        <untitled-ontology-35:titulo>Décima XVII</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaDecima3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDecimaEspinela"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPopular"/>
+        <untitled-ontology-35:titulo>Nanas de la cebolla</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaDialogoPastoriles"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNaturaleza"/>
+        <untitled-ontology-35:titulo>Égloga I</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNaturaleza"/>
+        <untitled-ontology-35:titulo>Égloga II</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaEgloga3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor"/>
+        <untitled-ontology-35:titulo>Égloga III</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDolor"/>
+        <untitled-ontology-35:titulo>La muerte del rey don Rodrigo</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaMuerte"/>
+        <untitled-ontology-35:titulo>Elegía por la muerte de Don Rodrigo Manrique</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaElegia3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDespedida"/>
+        <untitled-ontology-35:titulo>Elegía a Ramón Sijé</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNaturaleza"/>
+        <untitled-ontology-35:titulo>Old pond; a frog jumps in...</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaInstante"/>
+        <untitled-ontology-35:titulo>Furu ike ya</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHaiku3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaSimple"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPercepcion"/>
+        <untitled-ontology-35:titulo>Morning glory</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPatriotico"/>
+        <untitled-ontology-35:titulo>Himno a la libertad</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaAlejandrino"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPatriotico"/>
+        <untitled-ontology-35:titulo>Himno a la alegría</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaHimno3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaReligioso"/>
+        <untitled-ontology-35:titulo>Himno Nacional de Colombia</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAdmiracion"/>
+        <untitled-ontology-35:titulo>Oda al niño</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAdmiracion"/>
+        <untitled-ontology-35:titulo>Oda a la alegría</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaOda3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaLibre"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaElogio"/>
+        <untitled-ontology-35:titulo>Oda al tomate</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTirasContinuas"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNarrativo"/>
+        <untitled-ontology-35:titulo>Proverbios y cantares XXIX</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTirasContinuas"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaLeyenda"/>
+        <untitled-ontology-35:titulo>Romance sonámbulo</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaRomance3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTirasContinuas"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance"/>
+        <untitled-ontology-35:titulo>Romance de la luna, luna</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto"/>
+        <untitled-ontology-35:esEscritoPorAutor rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCuartetos"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima_Consonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor"/>
+        <untitled-ontology-35:titulo>Soneto V</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto"/>
+        <untitled-ontology-35:esEscritoPorAutor rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaTercetos"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima_Consonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor"/>
+        <untitled-ontology-35:titulo>En tanto que de rosa y azucena</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#PoemaSoneto3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto"/>
+        <untitled-ontology-35:esEscritoPorAutor rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1"/>
+        <untitled-ontology-35:tieneEstrofa rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#EstrofaCuartetos"/>
+        <untitled-ontology-35:tieneMetrica rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+        <untitled-ontology-35:tieneRima rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima_Consonante"/>
+        <untitled-ontology-35:tieneTema rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaFilosofia"/>
+        <untitled-ontology-35:titulo>Soneto XVIII</untitled-ontology-35:titulo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <untitled-ontology-35:nombre>Sor Juana Inés de la Cruz</untitled-ontology-35:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <untitled-ontology-35:esInspiradoPor rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta1"/>
+        <untitled-ontology-35:nombre>PabloSegundo</untitled-ontology-35:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta"/>
+        <untitled-ontology-35:esInspiradoPor rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Poeta2"/>
+        <untitled-ontology-35:nombre>PableTercero</untitled-ontology-35:nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Asonante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonantePares -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaAsonantePares">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#AsonantePares"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaConsonante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#RimaLibre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima_Consonante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Rima_Consonante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAdmiracion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAdmiracion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaAmor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDespedida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDespedida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDolor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaDolor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaElogio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaElogio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaFilosofia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaFilosofia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaHumor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaHumor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaInstante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaInstante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaLeyenda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaLeyenda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaMuerte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaMuerte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNarrativo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNarrativo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNaturaleza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaNaturaleza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPatriotico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPatriotico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPercepcion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPercepcion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPopular -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaPopular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaReflexion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaReflexion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaReligioso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaReligioso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaTradicion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaTradicion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Admiracion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Amor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Despedida"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dolor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elogio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Filosofia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Humor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Instante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Leyenda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Muerte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Naturaleza"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Patriotico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Percepcion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Popular"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Religioso"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaConceptual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaRomance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#TemaVisual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Tradicion"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Alta"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Baja"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Media"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Asonante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#AsonantePares"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Consonante"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Libre"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Caligrama"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Copla"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Decima"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Egloga"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Elegia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Haiku"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Himno"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oda"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Romance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Soneto"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Cantada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Coral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Descriptiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Dialogada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#DialogoLirico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Exhortativo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Figurativo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Impresionista"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Introspectiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Lamentativa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Laudatoria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Minimalista"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Narrativa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Oral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Reflexiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Visual"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#Metrica5-7-5-silabas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaAlejandrino"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaEndecasilabo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaLibre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hamil/ontologies/2025/4/untitled-ontology-35#MetricaOctosílabo"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
